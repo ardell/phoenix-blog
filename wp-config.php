@@ -15,17 +15,17 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
-
-/** MySQL database username */
-define('DB_USER', 'root');
-
-/** MySQL database password */
-define('DB_PASSWORD', 'root');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
+if (isset($_SERVER['ENVIRONMENT']) && $_SERVER['ENVIRONMENT'] == 'PAGODA') {
+    define('DB_NAME', $_SERVER['DB_NAME']);
+    define('DB_USER', $_SERVER['DB_USER']);
+    define('DB_PASSWORD', $_SERVER['DB_PASSWORD']);
+    define('DB_HOST', $_SERVER['DB_HOST']);
+} else {
+    define('DB_NAME', 'wordpress');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', 'root');
+    define('DB_HOST', 'localhost');
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
