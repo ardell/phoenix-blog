@@ -1,3 +1,5 @@
 shared_writable_dirs: [ /wp-content/uploads/ ]
 display_errors: off
 upload_max_filesize: 20M
+shared_writable_dirs:
+    - /wp-content/themes/simplicity/cache
