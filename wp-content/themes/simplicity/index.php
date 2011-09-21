@@ -41,7 +41,7 @@
 			?>
 			<!-- Mini Features -->
 			<div id="sub-featured" class="<?php echo $main_css_class; ?> section">
-	        	<h2 class="section-title"><?php echo stripslashes( $featured_title ); ?></h2>
+	        	<!-- <h2 class="section-title"><?php echo stripslashes( $featured_title ); ?></h2> -->
 	        
 	        	<?php query_posts('post_type=infobox&order=ASC&posts_per_page='.$mini_features_number); ?>
 	        	<?php if (have_posts()) { $count = 0; while (have_posts()) { the_post(); $count++; ?>	
