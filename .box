@@ -9,3 +9,4 @@ php_extensions:
   - gd
   - mysql
   - rewrite
+  - curl
