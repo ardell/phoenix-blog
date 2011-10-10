@@ -301,7 +301,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover  {text-de
 
 /* 2.3 Header */
 #header-container {background:#eff3f7;border-bottom: 1px solid #D0D8DE;position: relative; z-index: 999;}
-#header {padding:30px 0 20px;clear:both;position:relative;}
+#header {padding:5px 0 5px;clear:both;position:relative;}
 
 #logo  { float:left; }
 #logo img  { }
