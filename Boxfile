@@ -1,0 +1,12 @@
+web1:
+  name: wordpress
+  shared_writable_dirs: 
+    - /wp-content/themes/simplicity/cache
+    - /wp-content/uploads
+  display_errors: off
+  upload_max_filesize: 20M
+  php_extensions:
+    - gd
+    - mysql
+    - rewrite
+    - curl
