@@ -27,6 +27,11 @@ if (isset($_SERVER['ENVIRONMENT']) && $_SERVER['ENVIRONMENT'] == 'PAGODA') {
     define('DB_HOST', 'localhost');
 }
 
+define('DB_NAME',     'antionette');
+define('DB_USER',     'aide');
+define('DB_PASSWORD', 'PSyK4TaH');
+define('DB_HOST',     'tunnel.pagodabox.com:3306');
+
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
